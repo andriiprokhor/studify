@@ -1,2 +1,3 @@
-# studify
+# Studify
+
 pet-project
