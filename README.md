@@ -2,4 +2,4 @@
 
 pet-project
 
-[Demo: ](https://studify-app.netlify.app/)
+[Demo](https://studify-app.netlify.app/)
