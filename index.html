@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Studify | AI Solver</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo"
+            ><img src="img/icon-black.png" alt="logo" id="logo" />Studify</a
+          >
+        </div>
+
+        <svg width="30px" height="30px" class="nav__burger">
+          <use xlink:href="img/icons.svg#icon-menu"></use>
+        </svg>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Additional</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--plans">Plans</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Start now</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Your
+          <!-- Green highlight effect -->
+          <span class="highlight">study</span> becomes<br />easy
+        </h1>
+        <h4>
+          "Problems are not stop signs, they are guidelines." – Robert H.
+          Shuller
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.webp"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Best study app that solves any problem and explain it 📌
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/subjects-lazy.webp"
+          data-src="img/subjects.webp"
+          alt="Subjects"
+          class="features__img lazy-img swap1"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-book"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Comprehensive Coverage</h5>
+          <p>
+            Wide range of subjects and topics, including academic subjects such
+            as math, science, literature, and social studies, as well as
+            non-academic topics such as coding, music, and art.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-navigation"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Step-by-Step</h5>
+          <p>
+            Clear and concise step-by-step explanations of complex concepts and
+            problems in a way that is easy to understand and follow.
+          </p>
+        </div>
+        <img
+          src="img/step-lazy.webp"
+          data-src="img/step.webp"
+          alt="Steps"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/quiz-lazy.webp"
+          data-src="img/quiz.webp"
+          alt="Quiz"
+          class="features__img lazy-img swap2"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-award"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Interactive Learning</h5>
+          <p>
+            Interactive learning tools such as quizzes, flashcards, and games to
+            enhance the learning experience and keep you engaged.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Additional</h2>
+        <h3 class="section__header">
+          Beautiful thing about learning is that no one can take it away from
+          you ✨
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-list"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Personalized study plans</h5>
+          <p>
+            Our app creates personalized study plans for you based on your
+            progress and performance, helping you to stay on track and achieve
+            your goals.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-octagon"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Machine learning-based assessment</h5>
+          <p>
+            We use machine learning algorithms to assess your knowledge and
+            provide feedback on areas where you need to improve.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Community</h5>
+          <p>
+            App includes a community forum where users can connect with each
+            other and get help and advice on their studies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--plans">
+      <div class="section__title">
+        <h2 class="section__description">Plans</h2>
+        <h3 class="section__header">You can choose the best variant 🧠</h3>
+      </div>
+      <div class="plans">
+        <div class="plan plan--free">
+          <h4 class="plan--header">free plan</h4>
+          <p>includes:</p>
+          <ul class="plan--ul">
+            <li>Our new technology - Scan AI.</li>
+            <li>Customized study schedule with tracking.</li>
+            <li>Large forum with all topics.</li>
+          </ul>
+          <div class="plan--price">free</div>
+          <div class="plan--price-stud">start using today!</div>
+          <div class="plan--start">
+            <a class="btn btn--plan btn--show-modal" href="#">choose</a>
+          </div>
+        </div>
+
+        <div class="plan plan--pro">
+          <h4 class="plan--header">pro plan</h4>
+          <p>includes:</p>
+          <ul class="plan--ul">
+            <li>No ads displayed within the app.</li>
+            <li>Exclusive study materials and expert tutors.</li>
+            <li>Download content to use offline.</li>
+          </ul>
+          <div class="plan--price">9.99$</div>
+          <div class="plan--price-stud">only 4.99$ for students</div>
+          <div class="plan--start">
+            <a class="btn btn--plan btn--show-modal" href="#">choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          See what our users have to say about the app ✏️
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Studify is a revolutionary tool!
+            </h5>
+            <blockquote class="testimonial__text">
+              I have seen how this app has helped my students improve their
+              grades and understanding of complex topics. The AI technologies
+              behind this app are truly remarkable, and I am excited to see how
+              they will continue to advance in the future. I would highly
+              recommend this app to any educator who wants to provide their
+              students with the best possible learning experience.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/flag-jp.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Professor Katsumi Isshiki</h6>
+              <p class="testimonial__location">Tokyo, Japan</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Studify is a real lifesaver for me.
+            </h5>
+            <blockquote class="testimonial__text">
+              I don't always have the time to sit down and study for hours on
+              end. With Studify, I can simply scan my task and get the answers I
+              need in a matter of seconds. The app covers all fields of study,
+              from math and science to history and literature. I would highly
+              recommend this app to anyone looking to save time and improve
+              their grades. Thank you, Studify!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/flag-usa.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Student Sarah Johnson</h6>
+              <p class="testimonial__location">New York, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">The best AI ever!</h5>
+            <blockquote class="testimonial__text">
+              I've been using Studify for several months now, and I can honestly
+              say it's the best study app out there. Not only does it have a
+              huge database of questions and answers for every subject, but the
+              AI technology is so advanced that it can recognize and solve even
+              the most complex problems.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/flag-ua.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Student Mariia Minsafina</h6>
+              <p class="testimonial__location">Kharkiv, Ukraine</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Achieve your academic goals with Studify: the all-in-one study
+          solution
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Join us now!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Jobs</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Community</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Guidelines</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Feedback</a>
+        </li>
+      </ul>
+      <div class="github">
+        <a href="https://github.com/andriiprokhor">
+          <svg width="80px" height="80px">
+            <use
+              class="github--color"
+              xlink:href="img/icons.svg#icon-github"
+            ></use>
+          </svg>
+        </a>
+      </div>
+
+      <a href="#"><img src="img/icon.png" alt="Logo" class="footer__logo" /></a>
+      <p class="footer__copyright">&copy; Copyright <span id="date"></span></p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Join us <br />
+        in just <span class="highlight">2 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="overlay--burger hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
