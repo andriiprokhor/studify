@@ -32,7 +32,7 @@ body {
 
 /* GENERAL ELEMENTS */
 .section {
-  padding: 15rem 3rem;
+  padding: 0rem 3rem;
   border-top: 2px solid #333;
 
   transition: transform 1s, opacity 1s;
@@ -484,7 +484,7 @@ h4 {
 .testimonial__photo {
   grid-row: 1 / span 2;
   width: 6.5rem;
-  border: #333 solid 0.4rem;
+  box-shadow: 2px 2px 2px #666;
 }
 
 .testimonial__name {
@@ -752,33 +752,19 @@ h4 {
   }
 }
 
-@media (max-width: 950px) {
-  html {
-    font-size: 45%;
-  }
-}
-
 @media (max-width: 800px) {
-  html {
-    font-size: 40%;
-  }
-
   .header__title {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
     align-items: left;
-    margin: 14rem 4rem;
+    margin: 10rem 2.6rem;
   }
 
   .header__img {
     max-width: 70%;
-    margin-top: 12rem;
+    margin-top: 8rem;
     align-self: center;
-  }
-
-  .section {
-    padding: 15rem 0rem;
   }
 
   .nav__links {
@@ -800,8 +786,19 @@ h4 {
 }
 
 @media (max-width: 640px) {
-  html {
-    font-size: 36%;
+  h1 {
+    font-size: 4rem;
+  }
+  .section__header {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .btn--text {
+    font-size: 2rem;
   }
   .plans {
     flex-direction: column;
@@ -809,11 +806,11 @@ h4 {
   }
 
   .section {
-    padding: 15rem 0rem;
+    padding: 12rem 0rem;
   }
 
   .section__title {
-    margin: 0 6rem 10rem 6rem;
+    margin: 0 4rem 8rem 4rem;
   }
   .footer__nav {
     display: grid;
@@ -853,11 +850,22 @@ h4 {
   }
 
   .footer__link {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 
   .footer__copyright {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .plan--header {
+    font-size: 3.2rem;
+  }
+  .plan {
+    padding: 4rem 6rem;
+  }
+
+  .plan--price {
+    font-size: 3rem;
   }
 }
 
@@ -875,6 +883,10 @@ h4 {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+}
+
+.nav__links--active li {
+  margin-right: 4rem;
 }
 
 .overlay--burger {
