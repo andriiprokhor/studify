@@ -139,7 +139,7 @@ const stickyNav = function (entries) {
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
+  threshold: 0.1,
   rootMargin: `-${navHeight}px`,
 });
 
@@ -159,7 +159,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0,
+  threshold: 0.15,
 });
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
